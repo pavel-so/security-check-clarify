@@ -23,7 +23,7 @@ gem "cucumber-rails", ">= 1.2.0", :group => :test
 gem "capybara", ">= 1.1.2", :group => :test
 gem "database_cleaner", ">= 0.7.0", :group => :test
 gem "launchy", ">= 2.0.5", :group => :test
-gem "devise", ">= 1.5.0"
+gem "devise", ">= 1.5.4"
 gem "rails-footnotes", ">= 3.7", :group => :development
 gem 'rails_admin', ">= 0.4.6"
 gem "cancan"
