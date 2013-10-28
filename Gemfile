@@ -1,7 +1,7 @@
 require 'rbconfig'
 HOST_OS = RbConfig::CONFIG['host_os']
 source 'http://rubygems.org'
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.15'
 gem 'mysql2'
 
 gem 'sass'
