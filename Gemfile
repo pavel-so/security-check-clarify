@@ -1,7 +1,7 @@
 require 'rbconfig'
 HOST_OS = RbConfig::CONFIG['host_os']
 source 'http://rubygems.org'
-gem 'rails', '3.2.15'
+gem 'rails', '3.2.17'
 gem 'mysql2'
 
 gem 'sass'
@@ -28,10 +28,10 @@ gem "rails-footnotes", ">= 3.7", :group => :development
 gem 'rails_admin', ">= 0.4.6"
 gem "cancan"
 gem "ancestry"
-gem 'tinymce-rails'
+gem 'tinymce-rails', '4.0.12'
 gem 'acts-as-taggable-on', '~> 2.2.2'
 gem 'ajaxful_rating', '>= 3.0.0.beta7'
-gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem "paperclip", '~> 3.5.2'
 gem 'aws-sdk'
 gem "nested_form", '~> 0.3.0'
 #rails generate sunspot_rails:install
@@ -45,13 +45,15 @@ gem "acts_as_follower"
 gem "acts_as_commentable"
 gem "capistrano"
 gem 'paper_trail', '~> 2'
-gem 'scheduler_daemon', :git => 'https://github.com/ssoroka/scheduler_daemon'  # grab latest from github to avoid a bug in the official 1.1.2 gem
+gem 'scheduler_daemon', '~>1.1.3'
+gem 'rufus-scheduler', '~> 2.0.0'
 group :development do
   gem "debugger"
   gem 'mailcatcher'
 end
 gem 'rabl'
 gem 'yajl-ruby'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.6.1'
 gem 'htmlentities'
 gem "errplane"
+gem 'whenever', :require => false
